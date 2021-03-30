@@ -5,10 +5,11 @@ def foo():
 
   f = open("quotes.txt")
   quotes = f.readlines()
-  rnd = random.randint(0, len(quotes)-1)
   f.close()
 
-  print(quotes[rnd])
+  for i in range(5):
+      rnd = random.randint(0, len(quotes)-1)
+      print(quotes[rnd],end='')
 
   #f = open("quotes.txt")
   #quotes = f.readlines()
